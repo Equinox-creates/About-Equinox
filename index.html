@@ -5,7 +5,7 @@
 <!------------html----------->
 <div class="main">
 <h1><b>HELLO , I AM "EQUINOX_PIXEL"</b></h1>
-<h2>Want to know more about me?</h2>
+<h2>Want to know more about me?</h2><a href=" "><button>Reload</button></a>
 </div>
 
 <div class="c1"></div>
@@ -21,24 +21,24 @@
 </h3></p>
 </div>
 <div class="empty0">
-    <h4> This sit is not suporded in  phon proparly:</h4>
+    <h4> This sit is not suporded in  phon proparly in opera too:</h4>
 </div>
 <div class="img">
-    <img  class="img1"src="Equinox.png" alt="Loading">
+    <img  class="img1 imgskel"src="img/Equinox.png" alt="Loading">
     <p> ^My first created Logo^</p>
-    <img class="img1"src="EQUINOX-B-R.png" alt="Loading">
+    <img class="img1 imgskel"src="img/EQUINOX-B-R.png" alt="Loading">
     <p> ^My 2nd created Logo^</p>
-        <img class="img1"src="EQ.png" alt="Loading">
+        <img class="img1 imgskel"src="img/EQ.png" alt="Loading">
     <p> ^My 3rd created Logo^</p>
-        <img class="img1"src="EQ1.png" alt="Loading">
+        <img class="img1 imgskel"src="img/EQ1.png" alt="Loading">
     <p> ^My 4nh created Logo^</p>
-            <img class="img1"src="EQ2.png" alt="Loading">
+            <img class="img1 imgskel"src="img/EQ2.png" alt="Loading">
     <p> ^My 5th created Logo^</p>
-            <img class="img1"src="EQ3.png" alt="Loading">
+            <img class="img1 imgskel"src="img/EQ3.png" alt="Loading">
                 <p> ^My letest created Logo^</p>
             <div class="vid0">
-        <video calss="vid0"controls src=""></video>
-        <p class="v1"> i The video is not availebl for now</p>
+        <video calss="vid0"controls src="Vidos/Just Showcase.mkv"></video>
+        <p class="v1"> Just A Showcase</p>
         </div>
 </div>
 <div class="footer">
@@ -72,8 +72,13 @@
 
 <!--------------css----------->
 <style>
+    cursor{
+        cursor: default;
+    }
+    
+    
     p{
-        margin-left: 20%;
+        margin-left: 25%;
         color:rgb(131, 205, 255);
     }
     .h12{
@@ -121,6 +126,7 @@
     }
     .cnt0 h3{
         color: aliceblue;
+        cursor: default;
     }
     .empty0 h4{
         color: rgb(131, 205, 255);
@@ -128,10 +134,11 @@
         opacity: 40%;
     }
     .img1{
-        width:50%;
+        width:80%;
         margin: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgb(29, 29, 29);
+        margin-left: -100px;
     }
     .img{
         margin-left: 30%;
@@ -149,6 +156,7 @@
     }
         ::-webkit-scrollbar-track{
         background-color: rgb(100, 100, 100);
+        box-shadow: 0 0 10px rgb(29, 29, 29);
     }
         ::-webkit-scrollbar-thumb {
         background-color: rgb(131, 205, 255);
@@ -157,22 +165,25 @@
         margin-bottom: 10px;
         box-shadow: 0 0 10px rgb(131, 205, 255);
         opacity: 100% ;
+        cursor: pointer;
     }
     .vid0 video{
-                width:50%;
+                width:80%;
         margin: 20px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgb(29, 29, 29);
+        box-shadow: 7px -7px 20px rgb(29, 29, 29);
+        cursor: pointer;
+        margin-left: -100px;
     }
 
     .footer{
         cursor:pointer;
         background-color: black;
-        width: 1881px;
+        width: 1884px;
         height: 900%;
         padding: 10px;
         margin-left: -10px;
-        box-shadow: 0 0 10px rgb(131, 205, 255);
+        box-shadow: 0 0  10px rgb(131, 205, 255);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -184,10 +195,37 @@
         height: 50%;
     }
     .v1{
-        color: red;
+        color: rgb(131, 205, 255);
         opacity: 50%;
         margin-top: -20px;
+        margin-left: 25%;
+        cursor: pointer;
     }
+    .main button{
+        padding: 10px;
+        border-radius: 50px;
+        color: aliceblue;
+        background-color: blueviolet;
+        box-shadow: -5px 5px 10px rgb(0, 0, 0);
+        cursor: pointer;
+        margin-left: 1750px;
+        margin-top: -800px;
+    }
+    .imgskel{
+        opacity: .7;
+        animation: skeleton-loading  1s linear infinite alternate ;
+    }
+
+    @keyframes skeleton-loading  {
+        0%{
+            background-color: hsl(200, 20%, 70%);
+        }
+                100%{
+            background-color: hsl(200, 20%, 95%);
+        }
+    }
+        
+    
 
 
 
